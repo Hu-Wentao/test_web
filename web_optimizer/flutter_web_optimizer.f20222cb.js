@@ -1,7 +1,7 @@
     // The code below is injected by flutter web optimizer, do not edit!!!!!!
     
     // window.assetBase
-    var assetBase = "./";
+    var assetBase = ".";
     
     // window.mainjsManifest
     var mainjsManifest = {

@@ -4,15 +4,15 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "b3c25d78bb96f4352f7edc20a377d58b",
-"index.html": "fc2a40eae19382951c090def2ae959e7",
-"/": "fc2a40eae19382951c090def2ae959e7",
-"flutter_web_optimizer.8e96a01b.js": "8e96a01b4e6a467ab1607f442edb31af",
+"index.html": "84871895e3fef3bebea0bbed207953d5",
+"/": "84871895e3fef3bebea0bbed207953d5",
+"flutter_web_optimizer.f20222cb.js": "f20222cbf8f3db6dadc67fbcdc3ad451",
 "main.dart_0.93fbdcc6.js": "93fbdcc64cde2f85bce44a984f0d5fda",
 "main.dart_1.b8d1760c.js": "b8d1760cdd4bf6acae86954e0de07d0b",
 "main.dart_2.ae12d464.js": "ae12d464692ad05ba86b9a558f29345a",
 "main.dart_3.6dc6d135.js": "6dc6d135f493465ffcbd8be2a4d72466",
 "main.dart_4.9c331c74.js": "9c331c746a4c5346182a32a8f9e146d8",
-"main.dart_5.797bcbda.js": "37a68fd176cddeb8fba58cc111801f45",
+"main.dart_5.797bcbda.js": "2b747afa2fbbc1121097eb5b08f7982d",
 "flutter.10920ce5.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "favicon.5dcef449.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.ac9a721a.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -21,15 +21,14 @@ const RESOURCES = {
 "icons/Icon-512.96e75261.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.9a79ed10.json": "dead7662713742e940e88b8e7acf139e",
 "assets/AssetManifest.460e316e.json": "2efbb41d7877d10aac9d091f58ccd7b9",
-"assets/NOTICES": "4f6b9cf178a0280dc02b0e25615cd43c",
+"assets/NOTICES": "808f7db87c56b30fb51c28c09ad5a01b",
 "assets/FontManifest.012eb3a7.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.6d342eb6.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/fonts/MaterialIcons-Regular.e7069dfd.otf": "e7069dfd19b331be16bed984668fe080",
 "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
 "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-".idea/workspace.xml": "565fbde5b42fbfa9a82f0ad85afb89be"
+"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -47,7 +46,7 @@ const CORE = [
 ];
 
 // window.assetBase
-var assetBase = "./";
+var assetBase = ".";
 
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {

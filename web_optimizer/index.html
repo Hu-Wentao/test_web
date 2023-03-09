@@ -23,7 +23,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="test_web">
 <!--content值必须以 / 结尾-->
-<meta name="assetBase" content="./">
+<meta name="assetBase" content=".">
 
   <link rel="apple-touch-icon" href="icons/Icon-192.ac9a721a.png">
 
@@ -33,27 +33,43 @@
   <title>test_web</title>
   <link rel="manifest" href="manifest.9a79ed10.json">
 
-  <script src="./flutter_web_optimizer.8e96a01b.js" defer=""></script>
+  <script src=".flutter_web_optimizer.f20222cb.js" defer=""></script>
 <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2723814275';
+    var serviceWorkerVersion = '11813420';
   </script>
   <!-- This script adds the flutter initialization JS code -->
-  <script src="./flutter.10920ce5.js" defer=""></script>
+  <script src=".flutter.10920ce5.js" defer=""></script>
 </head>
+
 <body>
   <script>
-    window.addEventListener('load', function(ev) {
+    // window.addEventListener('load', function(ev) {
+    //   // Download main.dart.js
+    //   _flutter.loader.loadEntrypoint({
+    //     serviceWorker: {
+    //       serviceWorkerVersion: serviceWorkerVersion,
+    //     },
+    //     onEntrypointLoaded: function(engineInitializer) {
+    //       engineInitializer.initializeEngine().then(function(appRunner) {
+    //         appRunner.runApp();
+    //       });
+    //     }
+    //   });
+    // });
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
         }
+      }).then(function (engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function (appRunner) {
+        return appRunner.runApp();
+      }).then(function (app) {
+        // Wait a few milliseconds so users can see the "zoooom" animation
+        // before getting rid of the "loading" div.
       });
     });
   </script>

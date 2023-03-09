@@ -53612,4 +53612,4 @@ var s=A.a0v
 if(typeof dartMainRunner==="function")dartMainRunner(s,[])
 else s([])})})()
 
-//@ sourceURL=./main.dart.c0dc3e9b.js
+//@ sourceURL=.main.dart.c0dc3e9b.js
